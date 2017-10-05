@@ -39,7 +39,7 @@ int main()																//	main function, 主程式
     }
 	system("pause");
     return 0;
-}
+}																		//	end main function, 結束主程式
 
 // Helper function for using CUDA to add vectors in parallel.
 cudaError_t addWithCuda(int *c, const int *a, const int *b, unsigned int size)
