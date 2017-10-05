@@ -1,4 +1,4 @@
-
+//-----include header files, 引入標頭檔-----
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 
