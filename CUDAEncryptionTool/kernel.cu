@@ -21,7 +21,10 @@ int main()
     int c[arraySize] = { 0 };
 
     // Add vectors in parallel.
-    cudaError_t cudaStatus = addWithCuda(c, a, b, arraySize);
+	cudaError_t cudaStatus;
+	cudaStatus = cudaDeviceReset();
+
+	cudaStatus = addWithCuda(c, a, b, arraySize);
     if (cudaStatus != cudaSuccess) {
         fprintf(stderr, "addWithCuda failed!");
         return 1;
@@ -37,6 +40,7 @@ int main()
         fprintf(stderr, "cudaDeviceReset failed!");
         return 1;
     }
+
 
     return 0;
 }
