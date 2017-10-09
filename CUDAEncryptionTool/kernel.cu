@@ -1,5 +1,9 @@
+/*	
+	Develop by Jimmy Hu, 2017
+*/
 //-----include header files, 引入標頭檔-----
-#include "BasicCalculationUseCUDA.cuh";									//	include "BasicCalculationUseCUDA.cuh" header file, 引入標頭檔BasicCalculationUseCUDA.cuh
+//	-----include CUDA libraries-----
+#include "Libraries.cuh";												//	include "Libraries.cuh" header file, 引入標頭檔Libraries.cuh
 //	-----include C standard libraries
 #include <stdio.h>														//	include "stdio.h" header file, 引入標頭檔stdio.h
 #include <stdlib.h>														//	include "stdlib.h" header file, 引入標頭檔stdlib.h

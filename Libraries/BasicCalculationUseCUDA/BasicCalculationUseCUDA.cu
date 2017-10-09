@@ -1,4 +1,6 @@
-/*	Basic Calculation Use CUDA，使用CUDA執行基本運算	*/
+/*	Basic Calculation Use CUDA，使用CUDA執行基本運算
+	Develop by Jimmy Hu, 2017
+*/
 
 //-----include header files, 引入標頭檔-----
 //	-----include CUDA libraries-----
