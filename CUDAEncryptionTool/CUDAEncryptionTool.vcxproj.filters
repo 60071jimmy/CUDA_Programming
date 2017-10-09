@@ -12,10 +12,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Libraries.cuh">
+    <ClInclude Include="..\Libraries\BasicCalculationUseCUDA\BasicCalculationUseCUDA.cuh">
       <Filter>Libraries</Filter>
     </ClInclude>
-    <ClInclude Include="..\Libraries\BasicCalculationUseCUDA\BasicCalculationUseCUDA.cuh">
+    <ClInclude Include="..\Libraries\Libraries.cuh">
       <Filter>Libraries</Filter>
     </ClInclude>
   </ItemGroup>
