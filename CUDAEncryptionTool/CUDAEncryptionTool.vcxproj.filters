@@ -2,18 +2,5 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <CudaCompile Include="kernel.cu" />
-    <CudaCompile Include="BasicCalculationUseCUDA.cu">
-      <Filter>Libraries</Filter>
-    </CudaCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Libraries">
-      <UniqueIdentifier>{b6c2acc3-d40c-41db-b0a9-98a0f1e58000}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BasicCalculationUseCUDA.cuh">
-      <Filter>Libraries</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
