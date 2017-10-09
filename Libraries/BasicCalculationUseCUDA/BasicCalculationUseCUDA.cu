@@ -11,7 +11,7 @@
 #include <stdlib.h>														//	include "stdlib.h" header file, 引入標頭檔stdlib.h
 
 //-----funtion implementation, 副程式實作-----
-//	-----Add, Subtract, Multiply, Divide funtion implementation, 加法、減法、乘法、除法函數實作
+//	-----Add, Subtract, Multiply, Divide operation funtion implementation, 加法、減法、乘法、除法函數實作
 /*	addKernel function */
 __global__ void addKernel(int *c, const int *a, const int *b)
 {
@@ -359,6 +359,8 @@ Error:
 
 	return cudaStatus;
 }
+
+//	-----Bitwise operation 
 
 /*	orKernel function */
 __global__ void orKernel(int *c, const int *a, const int *b)
