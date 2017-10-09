@@ -11,6 +11,7 @@
 #include <stdlib.h>														//	include "stdlib.h" header file, 引入標頭檔stdlib.h
 
 //-----funtion implementation, 副程式實作-----
+/*	addKernel function */
 __global__ void addKernel(int *c, const int *a, const int *b)
 {
 	int i = threadIdx.x;
