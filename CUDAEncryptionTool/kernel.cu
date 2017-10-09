@@ -1,5 +1,5 @@
 //-----include header files, 引入標頭檔-----
-#include "cuda_runtime.h"
+#include "cuda_runtime.h"												//	include "cuda_runtime.h" header file, 引入標頭檔cuda_runtime.h
 #include "device_launch_parameters.h"									//	include "device_launch_parameters.h" header file, 引入標頭檔device_launch_parameters.h
 
 #include <stdio.h>														//	include "stdio.h" header file, 引入標頭檔stdio.h
