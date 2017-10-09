@@ -360,7 +360,7 @@ Error:
 	return cudaStatus;
 }
 
-//	-----Bitwise operation 
+//	-----Bitwise operation function implementation, 位元運算函數實作
 
 /*	orKernel function */
 __global__ void orKernel(int *c, const int *a, const int *b)
