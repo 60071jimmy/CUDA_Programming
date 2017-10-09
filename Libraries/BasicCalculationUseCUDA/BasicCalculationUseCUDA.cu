@@ -241,7 +241,7 @@ cudaError_t mulWithCuda(int *c, const int *a, const int *b, unsigned int size)
 	}
 
 	// Launch a kernel on the GPU with one thread for each element.
-	subKernel <<<1, size >>>(dev_c, dev_a, dev_b);
+	mulKernel <<<1, size >>>(dev_c, dev_a, dev_b);
 
 	// Check for any errors launching the kernel
 	cudaStatus = cudaGetLastError();
@@ -328,7 +328,7 @@ cudaError_t divWithCuda(int *c, const int *a, const int *b, unsigned int size)
 	}
 
 	// Launch a kernel on the GPU with one thread for each element.
-	subKernel <<<1, size >>>(dev_c, dev_a, dev_b);
+	divKernel <<<1, size >>>(dev_c, dev_a, dev_b);
 
 	// Check for any errors launching the kernel
 	cudaStatus = cudaGetLastError();
@@ -417,7 +417,7 @@ cudaError_t orWithCuda(int *c, const int *a, const int *b, unsigned int size)
 	}
 
 	// Launch a kernel on the GPU with one thread for each element.
-	subKernel <<<1, size >>>(dev_c, dev_a, dev_b);
+	orKernel <<<1, size >>>(dev_c, dev_a, dev_b);
 
 	// Check for any errors launching the kernel
 	cudaStatus = cudaGetLastError();
