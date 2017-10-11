@@ -26,3 +26,6 @@ cudaError_t orWithCuda(int *c, const int *a, const int *b, unsigned int size);
 
 __global__ void andKernel(int *c, const int *a, const int *b);
 cudaError_t andWithCuda(int *c, const int *a, const int *b, unsigned int size);
+
+__global__ void xorKernel(int *c, const int *a, const int *b);
+cudaError_t xorWithCuda(int *c, const int *a, const int *b, unsigned int size);
