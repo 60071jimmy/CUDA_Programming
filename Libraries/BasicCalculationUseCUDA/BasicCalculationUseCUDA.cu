@@ -544,7 +544,7 @@ __global__ void xorKernel(int *c, const int *a, const int *b)
 }
 
 // Helper function for using CUDA to bitwise or vectors in parallel.
-cudaError_t xorWithCuda(int *c, const int *a, const int *b, unsigned int size)
+cudaError_t xorWithCuda(int *c, const unsigned int *a, const unsigned int *b, unsigned int size)
 {
 	int *dev_a = 0;
 	int *dev_b = 0;
