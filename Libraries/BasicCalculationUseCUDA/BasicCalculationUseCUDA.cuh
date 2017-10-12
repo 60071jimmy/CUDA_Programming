@@ -11,7 +11,7 @@
 __global__ void addKernel(int *c, const int *a, const int *b);			//	宣告addKernel函數
 cudaError_t addWithCuda(int *c, const int *a, const int *b, unsigned int size);
 
-__global__ void subKernel(int *c, const int *a, const int *b);
+__global__ void subKernel(int *c, const int *a, const int *b);			//	宣告subKernel函數
 cudaError_t subWithCuda(int *c, const int *a, const int *b, unsigned int size);
 
 __global__ void mulKernel(int *c, const int *a, const int *b);
