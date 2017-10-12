@@ -8,7 +8,7 @@
 
 //-----funtion declaration, 副程式宣告區----- 
 //	-----Add, Subtract, Multiply, Divide funtion declaration, 加法、減法、乘法、除法函數宣告
-__global__ void addKernel(int *c, const int *a, const int *b);
+__global__ void addKernel(int *c, const int *a, const int *b);			//	宣告addKernel函數
 cudaError_t addWithCuda(int *c, const int *a, const int *b, unsigned int size);
 
 __global__ void subKernel(int *c, const int *a, const int *b);
