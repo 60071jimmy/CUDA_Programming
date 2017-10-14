@@ -17,7 +17,7 @@ cudaError_t subWithCuda(int *c, const int *a, const int *b, unsigned int size);
 __global__ void mulKernel(int *c, const int *a, const int *b);			//	宣告mulKernel函數
 cudaError_t mulWithCuda(int *c, const int *a, const int *b, unsigned int size);
 
-__global__ void divKernel(int *c, const int *a, const int *b);
+__global__ void divKernel(int *c, const int *a, const int *b);			//	宣告divKernel函數
 cudaError_t divWithCuda(int *c, const int *a, const int *b, unsigned int size);
 
 //	-----Bitwise operation function declaration, 位元運算函數宣告
