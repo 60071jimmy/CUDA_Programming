@@ -21,7 +21,7 @@ __global__ void divKernel(int *c, const int *a, const int *b);			//	宣告divKerne
 cudaError_t divWithCuda(int *c, const int *a, const int *b, unsigned int size);
 
 //	-----Bitwise operation function declaration, 位元運算函數宣告
-__global__ void orKernel(int *c, const int *a, const int *b);
+__global__ void orKernel(int *c, const int *a, const int *b);			//	宣告orKernel函數
 cudaError_t orWithCuda(int *c, const int *a, const int *b, unsigned int size);
 
 __global__ void andKernel(int *c, const int *a, const int *b);
