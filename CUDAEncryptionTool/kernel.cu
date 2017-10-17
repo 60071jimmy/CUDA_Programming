@@ -16,7 +16,7 @@ int main()																//	main function, 主程式
     int c[arraySize] = { 0 };
 
     //***Add vectors in parallel, 平行計算陣列加法***
-	cudaError_t cudaStatus;												//	
+	cudaError_t cudaStatus;												//	宣告cudaStatus物件
 	cudaStatus = cudaDeviceReset();
 	if (cudaStatus != cudaSuccess) {
 		fprintf(stderr, "cudaDeviceReset failed!");
