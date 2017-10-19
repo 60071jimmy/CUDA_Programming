@@ -18,7 +18,7 @@ int main()																//	main function, 主程式
     //***Add vectors in parallel, 平行計算陣列加法***
 	cudaError_t cudaStatus;												//	宣告cudaStatus物件，用於記錄執行結果是否錯誤
 	cudaStatus = cudaDeviceReset();										//	重置CUDA計算裝置
-	if (cudaStatus != cudaSuccess) {
+	if (cudaStatus != cudaSuccess) {									//	若cudaStatus為cudaSuccess
 		fprintf(stderr, "cudaDeviceReset failed!");
 		return 1;
 	}
