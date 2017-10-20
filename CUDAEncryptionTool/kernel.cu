@@ -19,8 +19,8 @@ int main()																//	main function, 主程式
 	cudaError_t cudaStatus;												//	宣告cudaStatus物件，用於記錄執行結果是否錯誤
 	cudaStatus = cudaDeviceReset();										//	重置CUDA計算裝置
 	if (cudaStatus != cudaSuccess) {									//	若cudaStatus為cudaSuccess
-		fprintf(stderr, "cudaDeviceReset failed!");
-		return 1;
+		fprintf(stderr, "cudaDeviceReset failed!");						//	顯示錯誤訊息
+		return 1;														//	回傳1並結束程式
 	}
 
 	cudaStatus = addWithCuda(c, a, b, arraySize);
