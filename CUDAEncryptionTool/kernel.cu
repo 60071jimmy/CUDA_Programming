@@ -24,7 +24,7 @@ int main()																//	main function, 主程式
 	}																	//	結束if敘述
 
 	cudaStatus = addWithCuda(c, a, b, arraySize);
-    if (cudaStatus != cudaSuccess) {
+    if (cudaStatus != cudaSuccess) {									//	若cudaStatus為cudaSuccess
         fprintf(stderr, "addWithCuda failed!");
         return 1;
     }
