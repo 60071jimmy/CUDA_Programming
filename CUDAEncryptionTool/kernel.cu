@@ -25,8 +25,8 @@ int main()																//	main function, 主程式
 
 	cudaStatus = addWithCuda(c, a, b, arraySize);
     if (cudaStatus != cudaSuccess) {									//	若cudaStatus為cudaSuccess
-        fprintf(stderr, "addWithCuda failed!");
-        return 1;
+        fprintf(stderr, "addWithCuda failed!");							//	顯示錯誤訊息
+        return 1;														//	回傳1並結束程式
     }
 
     printf("{1,2,3,4,5} + {10,20,30,40,50} = {%d,%d,%d,%d,%d}\n",
