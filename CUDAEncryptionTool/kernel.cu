@@ -35,8 +35,8 @@ int main()																//	main function, 主程式
     // cudaDeviceReset must be called before exiting in order for profiling and
     // tracing tools such as Nsight and Visual Profiler to show complete traces.
     cudaStatus = cudaDeviceReset();
-    if (cudaStatus != cudaSuccess) {
-        fprintf(stderr, "cudaDeviceReset failed!");
+    if (cudaStatus != cudaSuccess) {									//	若cudaStatus為cudaSuccess
+        fprintf(stderr, "cudaDeviceReset failed!");						//	顯示錯誤訊息
         return 1;
     }
 
