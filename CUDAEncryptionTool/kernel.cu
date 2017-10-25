@@ -37,8 +37,8 @@ int main()																//	main function, 主程式
     cudaStatus = cudaDeviceReset();
     if (cudaStatus != cudaSuccess) {									//	若cudaStatus為cudaSuccess
         fprintf(stderr, "cudaDeviceReset failed!");						//	顯示錯誤訊息
-        return 1;
-    }
+        return 1;														//	回傳1並結束程式
+    }																	//	結束if敘述
 
 	system("pause");
     return 0;
