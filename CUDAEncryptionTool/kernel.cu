@@ -42,4 +42,4 @@ int main()																//	main function, 主程式
 
 	system("pause");
     return 0;
-}
+}																		//	結束主程式
