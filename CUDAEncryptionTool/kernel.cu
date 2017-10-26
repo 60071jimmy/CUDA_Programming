@@ -9,7 +9,7 @@
 #include <stdlib.h>														//	include "stdlib.h" header file, 引入標頭檔stdlib.h
 
 int main()																//	main function, 主程式
-{
+{																		//	進入主程式
     const int arraySize = 5;
     const int a[arraySize] = { 1, 2, 3, 4, 5 };
     const int b[arraySize] = { 10, 20, 30, 40, 50 };
