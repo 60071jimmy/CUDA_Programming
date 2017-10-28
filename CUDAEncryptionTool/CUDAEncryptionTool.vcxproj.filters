@@ -10,6 +10,12 @@
     <Filter Include="Libraries">
       <UniqueIdentifier>{b6c2acc3-d40c-41db-b0a9-98a0f1e58000}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Libraries\BasicFileIO">
+      <UniqueIdentifier>{807cc4dd-5d42-4e9f-a235-a7d4d73c95cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\StdLibraries">
+      <UniqueIdentifier>{e68ebb46-d806-43b0-9d8f-a7f07072d0f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Libraries\BasicCalculationUseCUDA\BasicCalculationUseCUDA.cuh">
@@ -18,5 +24,16 @@
     <ClInclude Include="..\Libraries\Libraries.cuh">
       <Filter>Libraries</Filter>
     </ClInclude>
+    <ClInclude Include="Libraries\BasicFileIO\BasicFileIO.h">
+      <Filter>Libraries\BasicFileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\StdLibraries\unistd.h">
+      <Filter>Libraries\StdLibraries</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Libraries\BasicFileIO\BasicFileIO.c">
+      <Filter>Libraries\BasicFileIO</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
