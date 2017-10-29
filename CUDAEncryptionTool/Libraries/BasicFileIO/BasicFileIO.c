@@ -10,40 +10,40 @@
 #include <stdio.h>														//	引入標頭檔stdio.h
 #include <stdlib.h>														//	引入標頭檔stdlib.h
 #include <string.h>														//	引入標頭檔string.h
-#include <unistd.h>														//	引入標頭檔unistd.h
+#include "..\\..\\Libraries\\BasicFileIO\\BasicFileIO.h"				//	引入標頭檔BasicFileIO.h
 //-----副程式實作-----
-bool FileExistCheck(char *file_name)									//	FileExistCheck(檔案存在檢查)副程式
-{																		//	進入FileExistCheck(檔案存在檢查)副程式
-	if( access( file_name, F_OK ) != -1 )								//	若檔案存在
+bool FileExistCheck(char *file_name)									//	FileExistCheck(檔案存在檢查)副程式 
+{																		//	進入FileExistCheck(檔案存在檢查)副程式 
+	if( access( file_name, F_OK ) != -1 )								//	若檔案存在 
 	{																	//	進入if敘述
     	return true;													//	傳回true
-	} 																	//	結束if敘述
+	} 																	//	結束if敘述 
 	else 																//	若檔案不存在
-	{																	//	進入else敘述
-	    return false;													//	回傳false
-	}																	//	結束else敘述
-} 																		//	結束FileExistCheck(檔案存在檢查)副程式
-bool FileReadPermissionCheck(const char *file_name)						//	FileReadPermissionCheck(檔案讀取權限檢查)副程式
-{																		//	進入FileReadPermissionCheck(檔案讀取權限檢查)副程式
-	if( access( file_name, R_OK ) != -1 )								//	若檔案可讀取
-	{																	//	進入if敘述
-    	return true;													//	傳回true
-	} 																	//	結束if敘述
-	else 																//	若檔案不可讀取
-	{																	//	進入else敘述
-		return false;													//	回傳false
-	}																	//	結束else敘述
-} 																		//	結束FileReadPermissionCheck(檔案讀取權限檢查)副程式
-bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionCheck(檔案寫入權限檢查)副程式
+	{																	//	進入else敘述 
+	    return false;													//	回傳false 
+	}																	//	結束else敘述 
+} 																		//	結束FileExistCheck(檔案存在檢查)副程式 
+bool FileReadPermissionCheck(const char *file_name)						//	FileReadPermissionCheck(檔案讀取權限檢查)副程式 
+{																		//	進入FileReadPermissionCheck(檔案讀取權限檢查)副程式 
+	if( access( file_name, R_OK ) != -1 )								//	若檔案可讀取 
+	{																	//	進入if敘述 
+    	return true;													//	傳回true 
+	} 																	//	結束if敘述 
+	else 																//	若檔案不可讀取 
+	{																	//	進入else敘述 
+		return false;													//	回傳false 
+	}																	//	結束else敘述 
+} 																		//	結束FileReadPermissionCheck(檔案讀取權限檢查)副程式 
+bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionCheck(檔案寫入權限檢查)副程式 
 {																		//	進入FileWritePermissionCheck(檔案寫入權限檢查)副程式
 	if( access( file_name, W_OK ) != -1 )								//	若檔案可讀取
-	{																	//	進入if敘述
-    	return true;													//	傳回true
-	} 																	//	結束if敘述
-	else 																//	若檔案不可讀取
-	{																	//	進入else敘述
-	    return false;													//	回傳false
-	}																	//	結束else敘述
+	{																	//	進入if敘述 
+    	return true;													//	傳回true 
+	} 																	//	結束if敘述 
+	else 																//	若檔案不可讀取 
+	{																	//	進入else敘述 
+	    return false;													//	回傳false 
+	}																	//	結束else敘述 
 } 																		//	結束FileWritePermissionCheck(檔案寫入權限檢查)副程式
 
 bool FileWrite(const char *file_name,const char *input_str,const char *mode)
@@ -75,3 +75,4 @@ bool FileWrite(const char *file_name,const char *input_str,const char *mode)
 	fclose(file_point); 												//	關閉檔案
 	return true;														//	回傳true並結束副程式返回
 }																		//	結束FileWrite(檔案寫入)副程式
+
