@@ -8,7 +8,7 @@
 #include <math.h>														//	include math.h header file, 引入標頭檔math.h
 #include <stdbool.h>													//	include stdbool.h header file, 引入標頭檔stdbool.h
 #include <stdio.h>														//	include stdio.h header file, 引入標頭檔stdio.h
-#include <stdlib.h>														//	引入標頭檔stdlib.h
+#include <stdlib.h>														//	include stdlib.h header file, 引入標頭檔stdlib.h
 #include <string.h>														//	引入標頭檔string.h
 #include "..\\..\\Libraries\\BasicFileIO\\BasicFileIO.h"				//	引入標頭檔BasicFileIO.h
 //-----副程式實作-----
