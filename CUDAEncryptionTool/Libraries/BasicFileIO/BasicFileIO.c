@@ -10,7 +10,7 @@
 #include <stdio.h>														//	include stdio.h header file, 引入標頭檔stdio.h
 #include <stdlib.h>														//	include stdlib.h header file, 引入標頭檔stdlib.h
 #include <string.h>														//	include string.h header file, 引入標頭檔string.h
-#include "..\\..\\Libraries\\BasicFileIO\\BasicFileIO.h"				//	引入標頭檔BasicFileIO.h
+#include "..\\..\\Libraries\\BasicFileIO\\BasicFileIO.h"				//	include BasicFileIO.h header file, 引入標頭檔BasicFileIO.h
 //-----副程式實作-----
 bool FileExistCheck(char *file_name)									//	FileExistCheck(檔案存在檢查)副程式 
 {																		//	進入FileExistCheck(檔案存在檢查)副程式 
