@@ -10,7 +10,7 @@
 #include <stdio.h>														//	include stdio.h header file, 引入標頭檔stdio.h
 #include <stdlib.h>														//	include stdlib.h header file, 引入標頭檔stdlib.h
 #include <string.h>														//	include string.h header file, 引入標頭檔string.h
-#include "..\\..\\Libraries\\StdLibraries\\unistd.h"					//	引入標頭檔unistd.h
+#include "..\\..\\Libraries\\StdLibraries\\unistd.h"					//	include unistd.h header file, 引入標頭檔unistd.h
 //-----副程式宣告區----- 
 /*	FileExistCheck副程式用於
 	在讀寫檔案前，有時需先確認檔案是否已存在，在此設計FileExistCheck(檔案存在檢查)副程式執行檔案存在與否之檢查工作。
