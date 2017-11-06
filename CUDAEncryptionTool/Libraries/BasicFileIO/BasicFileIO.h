@@ -9,7 +9,7 @@
 #include <stdbool.h>													//	include stdbool.h header file, 引入標頭檔stdbool.h
 #include <stdio.h>														//	include stdio.h header file, 引入標頭檔stdio.h
 #include <stdlib.h>														//	include stdlib.h header file, 引入標頭檔stdlib.h
-#include <string.h>														//	引入標頭檔string.h
+#include <string.h>														//	include string.h header file, 引入標頭檔string.h
 #include "..\\..\\Libraries\\StdLibraries\\unistd.h"					//	引入標頭檔unistd.h
 //-----副程式宣告區----- 
 /*	FileExistCheck副程式用於
