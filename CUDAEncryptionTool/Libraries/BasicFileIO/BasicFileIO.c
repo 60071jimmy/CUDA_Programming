@@ -4,7 +4,7 @@
 	Develop by Jimmy HU
 	This program is licensed under GNU General Public License v3.
  */
-//-----引入標頭檔-----
+//-----include header files, 引入標頭檔-----
 #include <math.h>														//	include math.h header file, 引入標頭檔math.h
 #include <stdbool.h>													//	include stdbool.h header file, 引入標頭檔stdbool.h
 #include <stdio.h>														//	include stdio.h header file, 引入標頭檔stdio.h
