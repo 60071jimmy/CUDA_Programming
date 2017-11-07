@@ -11,7 +11,7 @@
 #include <stdlib.h>														//	include stdlib.h header file, 引入標頭檔stdlib.h
 #include <string.h>														//	include string.h header file, 引入標頭檔string.h
 #include "..\\..\\Libraries\\BasicFileIO\\BasicFileIO.h"				//	include BasicFileIO.h header file, 引入標頭檔BasicFileIO.h
-//-----副程式實作-----
+//-----funtion implementation, 副程式實作-----
 bool FileExistCheck(char *file_name)									//	FileExistCheck(檔案存在檢查)副程式 
 {																		//	進入FileExistCheck(檔案存在檢查)副程式 
 	if( access( file_name, F_OK ) != -1 )								//	若檔案存在 
