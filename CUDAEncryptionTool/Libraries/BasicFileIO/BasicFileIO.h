@@ -17,7 +17,7 @@
 	副程式輸入為(檔案路徑字串)
 	副程式輸出為布林變數，若檔案存在傳回值為true，若檔案不存在傳回值為false
  */
-bool FileExistCheck(char *);											//	宣告FileExistCheck(檔案存在檢查)副程式
+bool FileExistCheck(char *);											//	declare FileExistCheck function, 宣告FileExistCheck(檔案存在檢查)副程式
 /*	FileReadPermissionCheck副程式用於
 	在讀寫檔案前，有時需先確認檔案是否可讀取，在此設計FileReadPermissionCheck(檔案讀取權限檢查)副程式執行檔案可否讀取之檢查。
 	副程式輸入為(檔案路徑字串)
