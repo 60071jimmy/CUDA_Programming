@@ -23,7 +23,7 @@ bool FileExistCheck(char *);											//	declare FileExistCheck function, 宣�
 	副程式輸入為(檔案路徑字串)
 	副程式輸出為布林變數，若檔案具讀取權限傳回值為true，若檔案不具讀取權限傳回值為false
  */
-bool FileReadPermissionCheck(const char *);								//	宣告FileReadPermissionCheck(檔案讀取權限檢查)副程式
+bool FileReadPermissionCheck(const char *);								//	declare FileReadPermissionCheck function, 宣告FileReadPermissionCheck(檔案讀取權限檢查)副程式
 /*	FileWritePermissionCheck副程式用於
 	在讀寫檔案前，有時需先確認檔案是否可寫入，在此設計FileWritePermissionCheck(檔案寫入權限檢查)副程式執行檔案可否寫入之檢查。
 	副程式輸入為(檔案路徑字串)
