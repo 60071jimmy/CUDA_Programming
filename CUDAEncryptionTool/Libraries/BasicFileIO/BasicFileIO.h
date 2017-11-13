@@ -29,7 +29,7 @@ bool FileReadPermissionCheck(const char *);								//	declare FileReadPermission
 	副程式輸入為(檔案路徑字串)
 	副程式輸出為布林變數，若檔案具讀取權限傳回值為true，若檔案不具讀取權限傳回值為false
  */
-bool FileWritePermissionCheck(const char *);							//	宣告FileWritePermissionCheck(檔案寫入權限檢查)副程式
+bool FileWritePermissionCheck(const char *);							//	declare FileWritePermissionCheck function, 宣告FileWritePermissionCheck(檔案寫入權限檢查)副程式
 /*	FileWrite副程式用於資料寫入檔案儲存。
 	副程式輸入為(欲寫入檔案檔名, 欲寫入檔案之指標形式字串資料, 寫入檔案模式設定，可傳入"w"或"a"，"w"為新增/覆蓋模式，"a"為擴充模式)
 	副程式輸出為布林變數，若檔案寫入成功回傳true，若寫入失敗回傳false
