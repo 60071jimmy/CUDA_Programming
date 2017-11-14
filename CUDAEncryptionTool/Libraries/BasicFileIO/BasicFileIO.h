@@ -34,4 +34,4 @@ bool FileWritePermissionCheck(const char *);							//	declare FileWritePermissio
 	副程式輸入為(欲寫入檔案檔名, 欲寫入檔案之指標形式字串資料, 寫入檔案模式設定，可傳入"w"或"a"，"w"為新增/覆蓋模式，"a"為擴充模式)
 	副程式輸出為布林變數，若檔案寫入成功回傳true，若寫入失敗回傳false
  */
-bool FileWrite(const char *,const char *,const char *);					//	宣告FileWrite(檔案寫入)副程式，執行文字檔案寫入
+bool FileWrite(const char *,const char *,const char *);					//	declare FileWrite function, 宣告FileWrite(檔案寫入)副程式，執行文字檔案寫入
