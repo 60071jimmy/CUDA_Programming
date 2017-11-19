@@ -25,6 +25,7 @@ bool FileExistCheck(char *file_name)									//	FileExistCheck funtion implement
 } 																		//	結束FileExistCheck(檔案存在檢查)副程式 
 bool FileReadPermissionCheck(const char *file_name)						//	FileReadPermissionCheck funtion implementation, FileReadPermissionCheck(檔案讀取權限檢查)副程式 
 {																		//	start FileReadPermissionCheck funtion, 進入FileReadPermissionCheck(檔案讀取權限檢查)副程式 
+	if( access( file_name, R_OK ) != -1 )								//	if the file which path is file_name is readable, 若檔案可讀取 
 	{																	//	進入if敘述 
     	return true;													//	傳回true 
 	} 																	//	結束if敘述 
@@ -45,8 +46,10 @@ bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionC
 	}																	//	結束else敘述 
 } 																		//	結束FileWritePermissionCheck(檔案寫入權限檢查)副程式
 
+/*	FileWrite function, FileWrite(檔案寫入)副程式
+	執行文字檔案寫入
+ */
 bool FileWrite(const char *file_name,const char *input_str,const char *mode)
-//	FileWrite(檔案寫入)副程式，執行文字檔案寫入
 //	file_name為欲寫入檔案檔名
 // 	input_str為欲寫入檔案之指標形式字串資料
 //	mode為寫入檔案模式設定，可傳入"w"或"a"，"w"為新增/覆蓋模式，"a"為擴充模式
