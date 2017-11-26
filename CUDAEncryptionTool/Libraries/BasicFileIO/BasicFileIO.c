@@ -17,7 +17,7 @@ bool FileExistCheck(char *file_name)									//	FileExistCheck funtion implement
 	if( access( file_name, F_OK ) != -1 )								//	若檔案存在 
 	{																	//	entering if statement, 進入if敘述
     	return true;													//	return true, 傳回true
-	} 																	//	結束if敘述 
+	} 																	//	ending if statement, 結束if敘述 
 	else 																//	若檔案不存在
 	{																	//	進入else敘述 
 	    return false;													//	回傳false 
