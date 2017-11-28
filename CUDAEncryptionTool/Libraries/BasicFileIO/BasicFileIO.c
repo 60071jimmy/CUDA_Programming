@@ -19,7 +19,7 @@ bool FileExistCheck(char *file_name)									//	FileExistCheck funtion implement
     	return true;													//	return true, 傳回true
 	} 																	//	ending if statement, 結束if敘述 
 	else 																//	if file doesn't exist, 若檔案不存在
-	{																	//	進入else敘述 
+	{																	//	entering else statement, 進入else敘述 
 	    return false;													//	回傳false 
 	}																	//	結束else敘述 
 } 																		//	FileExistCheck funtion end, 結束FileExistCheck(檔案存在檢查)副程式 
