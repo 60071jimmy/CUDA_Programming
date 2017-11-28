@@ -14,11 +14,11 @@
 //-----funtion implementation, 副程式實作-----
 bool FileExistCheck(char *file_name)									//	FileExistCheck funtion implementation, FileExistCheck(檔案存在檢查)副程式 
 {																		//	start FileExistCheck funtion, 進入FileExistCheck(檔案存在檢查)副程式 
-	if( access( file_name, F_OK ) != -1 )								//	if file is exist, 若檔案存在 
+	if( access( file_name, F_OK ) != -1 )								//	if file exist, 若檔案存在 
 	{																	//	entering if statement, 進入if敘述
     	return true;													//	return true, 傳回true
 	} 																	//	ending if statement, 結束if敘述 
-	else 																//	若檔案不存在
+	else 																//	if file doesn't exist, 若檔案不存在
 	{																	//	進入else敘述 
 	    return false;													//	回傳false 
 	}																	//	結束else敘述 
