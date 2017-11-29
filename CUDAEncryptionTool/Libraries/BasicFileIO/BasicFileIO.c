@@ -20,7 +20,7 @@ bool FileExistCheck(char *file_name)									//	FileExistCheck funtion implement
 	} 																	//	ending if statement, 結束if敘述 
 	else 																//	if file doesn't exist, 若檔案不存在
 	{																	//	entering else statement, 進入else敘述 
-	    return false;													//	回傳false 
+	    return false;													//	return false, 回傳false 
 	}																	//	結束else敘述 
 } 																		//	FileExistCheck funtion end, 結束FileExistCheck(檔案存在檢查)副程式 
 bool FileReadPermissionCheck(const char *file_name)						//	FileReadPermissionCheck funtion implementation, FileReadPermissionCheck(檔案讀取權限檢查)副程式 
