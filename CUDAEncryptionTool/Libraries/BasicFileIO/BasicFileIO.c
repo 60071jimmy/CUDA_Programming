@@ -26,7 +26,7 @@ bool FileExistCheck(char *file_name)									//	FileExistCheck funtion implement
 bool FileReadPermissionCheck(const char *file_name)						//	FileReadPermissionCheck funtion implementation, FileReadPermissionCheck(檔案讀取權限檢查)副程式 
 {																		//	start FileReadPermissionCheck funtion, 進入FileReadPermissionCheck(檔案讀取權限檢查)副程式 
 	if( access( file_name, R_OK ) != -1 )								//	if the file which path is file_name is readable, 若檔案可讀取 
-	{																	//	進入if敘述 
+	{																	//	entering if statement, 進入if敘述 
     	return true;													//	傳回true 
 	} 																	//	結束if敘述 
 	else 																//	若檔案不可讀取 
