@@ -27,7 +27,7 @@ bool FileReadPermissionCheck(const char *file_name)						//	FileReadPermissionCh
 {																		//	start FileReadPermissionCheck funtion, 進入FileReadPermissionCheck(檔案讀取權限檢查)副程式 
 	if( access( file_name, R_OK ) != -1 )								//	if the file which path is file_name is readable, 若檔案可讀取 
 	{																	//	entering if statement, 進入if敘述 
-    	return true;													//	傳回true 
+    	return true;													//	return true, 傳回true 
 	} 																	//	結束if敘述 
 	else 																//	若檔案不可讀取 
 	{																	//	進入else敘述 
