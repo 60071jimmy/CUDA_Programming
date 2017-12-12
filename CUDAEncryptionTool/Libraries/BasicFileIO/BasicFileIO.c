@@ -28,7 +28,7 @@ bool FileReadPermissionCheck(const char *file_name)						//	FileReadPermissionCh
 	if( access( file_name, R_OK ) != -1 )								//	if the file which path is file_name is readable, 若檔案可讀取 
 	{																	//	entering if statement, 進入if敘述 
     	return true;													//	return true, 傳回true 
-	} 																	//	ending if statement,結束if敘述 
+	} 																	//	ending if statement, 結束if敘述 
 	else 																//	if the file which path is file_name isn't readable, 若檔案不可讀取 
 	{																	//	entering else statement, 進入else敘述 
 		return false;													//	return false, 回傳false 
@@ -39,7 +39,7 @@ bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionC
 	if( access( file_name, W_OK ) != -1 )								//	if the file which path is file_name is readable, 若檔案可讀取
 	{																	//	entering if statement, 進入if敘述 
     	return true;													//	return true, 傳回true 
-	} 																	//	結束if敘述 
+	} 																	//	ending if statement, 結束if敘述 
 	else 																//	若檔案不可讀取 
 	{																	//	進入else敘述 
 	    return false;													//	回傳false 
