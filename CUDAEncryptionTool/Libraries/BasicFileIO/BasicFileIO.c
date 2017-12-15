@@ -42,7 +42,7 @@ bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionC
 	} 																	//	ending if statement, 結束if敘述 
 	else 																//	if the file which path is file_name isn't readable, 若檔案不可讀取 
 	{																	//	entering else statement, 進入else敘述 
-	    return false;													//	回傳false 
+	    return false;													//	return false, 回傳false 
 	}																	//	結束else敘述 
 } 																		//	結束FileWritePermissionCheck(檔案寫入權限檢查)副程式
 
