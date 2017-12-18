@@ -58,7 +58,7 @@ bool FileWrite(const char *file_name,const char *input_str,const char *mode)
 	FILE *file_point;													//	宣告一file_point指標，控制檔案讀寫
 	if (strcmp(mode, "w") != 0 && strcmp(mode, "a") != 0 && strcmp(mode, "w+") != 0 && strcmp(mode, "a+") != 0)
 	//	若mode參數不為"w"亦不為"a"亦不為"w+"亦不為"a+"
-	{																	//	進入if敘述
+	{																	//	entering if statement, 進入if敘述
 		printf("FileWrite:mode ERROR!\n");								//	顯示"FileWrite:mode ERROR!"並換行
 		return false;													//	回傳false並結束副程式返回
 	}																	//	結束if敘述
