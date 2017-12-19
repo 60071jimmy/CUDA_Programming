@@ -34,7 +34,7 @@ bool FileReadPermissionCheck(const char *file_name)						//	FileReadPermissionCh
 		return false;													//	return false, 回傳false 
 	}																	//	ending else statement, 結束else敘述 
 } 																		//	FileReadPermissionCheck funtion end, 結束FileReadPermissionCheck(檔案讀取權限檢查)副程式 
-bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionCheck(檔案寫入權限檢查)副程式 
+bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionCheck funtion implementation, FileWritePermissionCheck(檔案寫入權限檢查)副程式 
 {																		//	start FileWritePermissionCheck funtion, 進入FileWritePermissionCheck(檔案寫入權限檢查)副程式
 	if( access( file_name, W_OK ) != -1 )								//	if the file which path is file_name is readable, 若檔案可讀取
 	{																	//	entering if statement, 進入if敘述 
