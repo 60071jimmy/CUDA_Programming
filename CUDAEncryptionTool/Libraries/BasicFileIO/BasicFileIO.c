@@ -44,7 +44,7 @@ bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionC
 	{																	//	entering else statement, 進入else敘述 
 	    return false;													//	return false, 回傳false 
 	}																	//	ending else statement, 結束else敘述 
-} 																		//	結束FileWritePermissionCheck(檔案寫入權限檢查)副程式
+} 																		//	ending FileWritePermissionCheck funtion, 結束FileWritePermissionCheck(檔案寫入權限檢查)副程式
 
 /*	FileWrite function, FileWrite(檔案寫入)副程式
 	執行文字檔案寫入
