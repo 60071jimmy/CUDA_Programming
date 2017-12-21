@@ -47,6 +47,7 @@ bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionC
 } 																		//	ending FileWritePermissionCheck funtion, 結束FileWritePermissionCheck(檔案寫入權限檢查)副程式
 
 /*	FileWrite function, FileWrite(檔案寫入)副程式
+	Implementation of text file writing.
 	執行文字檔案寫入
  */
 bool FileWrite(const char *file_name,const char *input_str,const char *mode)
