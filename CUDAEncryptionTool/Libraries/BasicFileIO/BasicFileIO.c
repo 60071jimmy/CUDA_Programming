@@ -49,12 +49,13 @@ bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionC
 /*	FileWrite function, FileWrite(檔案寫入)副程式
 	Implementation of text file writing.
 	執行文字檔案寫入
+	file_name為欲寫入檔案檔名
+	input_str為欲寫入檔案之指標形式字串資料
+	mode為寫入檔案模式設定，可傳入"w"或"a"，"w"為新增/覆蓋模式，"a"為擴充模式
+	回傳結果：若檔案寫入成功回傳true，若寫入失敗回傳false
  */
 bool FileWrite(const char *file_name,const char *input_str,const char *mode)
-//	file_name為欲寫入檔案檔名
-// 	input_str為欲寫入檔案之指標形式字串資料
-//	mode為寫入檔案模式設定，可傳入"w"或"a"，"w"為新增/覆蓋模式，"a"為擴充模式
-//	回傳結果：若檔案寫入成功回傳true，若寫入失敗回傳false
+//	FileWrite funtion implementation, 
 {																		//	進入FileWrite(檔案寫入)副程式
 	FILE *file_point;													//	宣告一file_point指標，控制檔案讀寫
 	if (strcmp(mode, "w") != 0 && strcmp(mode, "a") != 0 && strcmp(mode, "w+") != 0 && strcmp(mode, "a+") != 0)
