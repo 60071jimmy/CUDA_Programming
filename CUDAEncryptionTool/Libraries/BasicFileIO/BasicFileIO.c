@@ -56,7 +56,7 @@ bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionC
  */
 bool FileWrite(const char *file_name,const char *input_str,const char *mode)
 //	FileWrite funtion implementation, 
-{																		//	進入FileWrite(檔案寫入)副程式
+{																		//	start FileWrite funtion, 進入FileWrite(檔案寫入)副程式
 	FILE *file_point;													//	宣告一file_point指標，控制檔案讀寫
 	if (strcmp(mode, "w") != 0 && strcmp(mode, "a") != 0 && strcmp(mode, "w+") != 0 && strcmp(mode, "a+") != 0)
 	//	若mode參數不為"w"亦不為"a"亦不為"w+"亦不為"a+"
