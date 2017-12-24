@@ -78,5 +78,5 @@ bool FileWrite(const char *file_name,const char *input_str,const char *mode)
 	//fputs(input_str, file_point);										//	以fputs語法寫入檔案
 	fclose(file_point); 												//	關閉檔案
 	return true;														//	回傳true並結束副程式返回
-}																		//	結束FileWrite(檔案寫入)副程式
+}																		//	ending FileWrite funtion, 結束FileWrite(檔案寫入)副程式
 
