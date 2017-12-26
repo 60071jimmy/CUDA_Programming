@@ -61,7 +61,7 @@ bool FileWrite(const char *file_name,const char *input_str,const char *mode)
 	if (strcmp(mode, "w") != 0 && strcmp(mode, "a") != 0 && strcmp(mode, "w+") != 0 && strcmp(mode, "a+") != 0)
 	//	若mode參數不為"w"亦不為"a"亦不為"w+"亦不為"a+"
 	{																	//	entering if statement, 進入if敘述
-		printf("FileWrite:mode ERROR!\n");								//	顯示"FileWrite:mode ERROR!"並換行
+		printf("FileWrite:mode ERROR!\n");								//	Show "FileWrite:mode ERROR!" and line feed, 顯示"FileWrite:mode ERROR!"並換行
 		return false;													//	回傳false並結束副程式返回
 	}																	//	結束if敘述
 	if( strcmp(mode, "a") == 0 || strcmp(mode, "a+") == 0 )				//	若mode參數為"a"或"a+"(擴充模式)
