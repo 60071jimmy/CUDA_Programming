@@ -65,7 +65,7 @@ bool FileWrite(const char *file_name,const char *input_str,const char *mode)
 		return false;													//	return false and exit funtion, 回傳false並結束副程式返回
 	}																	//	ending if statement, 結束if敘述
 	if( strcmp(mode, "a") == 0 || strcmp(mode, "a+") == 0 )				//	If mode setting is "a" or "a+", 若mode參數為"a"或"a+"(擴充模式)
-	{																	//	進入if敘述
+	{																	//	entering if statement, 進入if敘述
 		if (FileWritePermissionCheck(file_name) == false)				//	若檔案無法寫入
 		{																//	進入if敘述
 			printf("FileWrite:permission ERROR!\n");					//	顯示"FileWrite:permission ERROR!"並換行
