@@ -36,11 +36,11 @@ bool FileReadPermissionCheck(const char *file_name)						//	FileReadPermissionCh
 } 																		//	FileReadPermissionCheck funtion end, 結束FileReadPermissionCheck(檔案讀取權限檢查)副程式 
 bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionCheck funtion implementation, FileWritePermissionCheck(檔案寫入權限檢查)副程式 
 {																		//	start FileWritePermissionCheck funtion, 進入FileWritePermissionCheck(檔案寫入權限檢查)副程式
-	if( access( file_name, W_OK ) != -1 )								//	if the file which path is file_name is readable, 若檔案可讀取
+	if( access( file_name, W_OK ) != -1 )								//	if the file which path is file_name is writable, 若檔案可寫入
 	{																	//	entering if statement, 進入if敘述 
     	return true;													//	return true, 傳回true 
 	} 																	//	ending if statement, 結束if敘述 
-	else 																//	if the file which path is file_name isn't readable, 若檔案不可讀取 
+	else 																//	if the file which path is file_name isn't writable, 若檔案不可寫入 
 	{																	//	entering else statement, 進入else敘述 
 	    return false;													//	return false, 回傳false 
 	}																	//	ending else statement, 結束else敘述 
@@ -66,7 +66,7 @@ bool FileWrite(const char *file_name,const char *input_str,const char *mode)
 	}																	//	ending if statement, 結束if敘述
 	if( strcmp(mode, "a") == 0 || strcmp(mode, "a+") == 0 )				//	If mode setting is "a" or "a+", 若mode參數為"a"或"a+"(擴充模式)
 	{																	//	entering if statement, 進入if敘述
-		if (FileWritePermissionCheck(file_name) == false)				//	若檔案無法寫入
+		if (FileWritePermissionCheck(file_name) == false)				//	if the file which path is file_name isn't writable, 若檔案無法寫入
 		{																//	進入if敘述
 			printf("FileWrite:permission ERROR!\n");					//	顯示"FileWrite:permission ERROR!"並換行
 			return false;												//	return false and exit funtion, 回傳false並結束副程式返回
