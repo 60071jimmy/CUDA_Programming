@@ -70,7 +70,7 @@ bool FileWrite(const char *file_name,const char *input_str,const char *mode)
 		{																//	entering if statement, 進入if敘述
 			printf("FileWrite:permission ERROR!\n");					//	顯示"FileWrite:permission ERROR!"並換行
 			return false;												//	return false and exit funtion, 回傳false並結束副程式返回
-		}																//	結束if敘述
+		}																//	ending if statement, 結束if敘述
 	}																	//	結束if敘述
 	file_point = fopen(file_name, mode);								//	以mode模式打開檔案
 	//	fprintf或fputs語法二擇一使用
