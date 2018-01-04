@@ -54,7 +54,7 @@ bool FileWritePermissionCheck(const char *file_name)					//	FileWritePermissionC
 	mode為寫入檔案模式設定，可傳入"w"或"a"，"w"為新增/覆蓋模式，"a"為擴充模式
 	回傳結果：若檔案寫入成功回傳true，若寫入失敗回傳false
  */
-bool FileWrite(const char *file_name,const char *input_str,const char *mode)
+bool FileWrite(const char *file_name, const char *input_str, const char *mode)
 //	FileWrite funtion implementation, 
 {																		//	start FileWrite funtion, 進入FileWrite(檔案寫入)副程式
 	FILE *file_point;													//	宣告一file_point指標，控制檔案讀寫
@@ -72,7 +72,7 @@ bool FileWrite(const char *file_name,const char *input_str,const char *mode)
 			return false;												//	return false and exit funtion, 回傳false並結束副程式返回
 		}																//	ending if statement, 結束if敘述
 	}																	//	ending if statement, 結束if敘述
-	file_point = fopen(file_name, mode);								//	以mode模式打開檔案
+	file_point = fopen(file_name, mode);								//	Use input variable "mode" to open file which path is file_name, 以mode模式打開檔案
 	//	fprintf或fputs語法二擇一使用
 	fprintf(file_point, input_str);										//	以fprintf語法寫入檔案
 	//fputs(input_str, file_point);										//	以fputs語法寫入檔案
