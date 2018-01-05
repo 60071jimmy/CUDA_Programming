@@ -14,7 +14,7 @@
 //	-----Add, Subtract, Multiply, Divide operation funtion implementation, 加法、減法、乘法、除法函數實作
 /*	addKernel function */
 __global__ void addKernel(int *c, const int *a, const int *b)			//	addKernel funtion implementation, addKernel副程式
-{																		//	進入addKernel副程式
+{																		//	start addKernel funtion, 進入addKernel副程式
 	int i = threadIdx.x;
 	c[i] = a[i] + b[i];
 }
