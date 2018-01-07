@@ -16,7 +16,7 @@
 __global__ void addKernel(int *c, const int *a, const int *b)			//	addKernel funtion implementation, addKernel副程式
 {																		//	start addKernel funtion, 進入addKernel副程式
 	int i = threadIdx.x;
-	c[i] = a[i] + b[i];
+	c[i] = a[i] + b[i];													//	calculate c = a + b
 }																		//	ending addKernel funtion, 結束addKernel副程式
 
 // Helper function for using CUDA to add vectors in parallel.
