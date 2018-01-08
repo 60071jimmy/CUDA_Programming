@@ -100,7 +100,7 @@ Error:
 }
 
 /*	subKernel function */
-__global__ void subKernel(int *c, const int *a, const int *b)
+__global__ void subKernel(int *c, const int *a, const int *b)			//	subKernel funtion implementation, subKernel°Æµ{¦¡
 {
 	int i = threadIdx.x;
 	c[i] = a[i] - b[i];
