@@ -101,7 +101,7 @@ Error:
 
 /*	subKernel function */
 __global__ void subKernel(int *c, const int *a, const int *b)			//	subKernel funtion implementation, subKernel副程式
-{
+{																		//	start subKernel funtion, 進入subKernel副程式
 	int i = threadIdx.x;
 	c[i] = a[i] - b[i];
 }
